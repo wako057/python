@@ -31,6 +31,13 @@ l = [5, 3, 5, 7]
 for v in l:
     print("élément ", v)
 
+for i in range (0, 10) :
+    if i == 2 :
+        continue           # on passe directement au suivant
+    print (i)
+    if i > 5 :
+        break              # interruption définitive
+
 print("============== Exo 4 ==============")
 a = 10
 if a > 0:

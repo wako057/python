@@ -39,6 +39,11 @@ for i in range (0, 10) :
         break              # interruption définitive
 
 print("============== Exo 4 ==============")
+l = [ ]
+for i in range (10) :
+    l.append( i*2+1)
+l
+
 a = 10
 if a > 0:
     print(a)

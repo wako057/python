@@ -75,6 +75,25 @@ def recherche_dichotomique(element, liste_triee):
 
 print("On recherche le 5: ", recherche_dichotomique(5, l))
 
+
+print("============== Exo 11 ==============")
+li = [0, 4, 5, 19, 100, 200, 450, 999]
+print("Sorted List: ", li)
+def recherche_dichotomique_recursive( element, liste_triee, a = 0, b = -1 ):
+    if a == b :
+        return a
+    if b == -1 :
+        b = len(liste_triee)-1
+    m = (a+b)//2
+    if liste_triee[m] == element:
+        return m
+    elif liste_triee[m] > element:
+        return recherche_dichotomique_recursive(element, liste_triee, a, m-1)
+    else:
+        return recherche_dichotomique_recursive(element, liste_triee, m+1, b)
+recherche_dichotomique(5, li)
+print("On recherche le 5: ", recherche_dichotomique(5, li))
+
 # a = 10
 # if a > 0:
 #     print(a)
